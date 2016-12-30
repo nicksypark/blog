@@ -19,7 +19,7 @@ google-analytics:
 
 # Disqus
 #disqus:
-  id:               "nicksypark"
+  id:               "nickpark"
 
 # URL
 #url:                "https://nicksypark.github.io" # the base hostname & protocol for your site
@@ -78,5 +78,6 @@ gems:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-gist
 
 exclude:            [vendor]
