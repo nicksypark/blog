@@ -18,7 +18,7 @@ google-analytics:
   id:               ""
 
 # Disqus
-#disqus:
+disqus:
   id:               "nickpark"
 
 # URL
