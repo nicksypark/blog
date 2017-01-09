@@ -2,7 +2,7 @@
 layout: post
 title: "BFS and DFS"
 description: "Breadth First Search and Depth First Search"
-date: 2017-01-03
+date: 2017-01-09
 tags: [tsp, algorithm]
 comments: true
 share: false
@@ -67,18 +67,20 @@ The following table represents the one-way path connection of cities (left = fro
 | 9 |   |  |  |  |  |  |  |  |  |  | X |
 | 10 |   |  |  |  |  |  |  |  |  |  | X |
 |=====
-The following code block is the implementation of BFS to solve TSP in Matlab.{% gist 1a1cc8ba542efb664fe46f3e59b48a32 %}
+I hard-coded the both above tables as below for the demonstration purpose.{% gist eb3577a31fa0357ed0d391b4882eaf1c %}
 
-
-The implementation of DFS can be done by calling a function recursively until every path to the target city has been found.
-
+The following code block is the implementation of BFS to solve TSP in Matlab.
+{% gist 07725a702fbc55746df85bbe17b071e6 %}
 
 
 The following code block is the implementation of DFS to solve TSP in Matlab.
-{% gist 1a1cc8ba542efb664fe46f3e59b48a32 %}
+{% gist 6a73e3e46f98dcddefde43b8952dda12 %}
 
 
 The implementation of DFS can be done by calling a function recursively until every path to the target city has been found.
+
+The distance between two cities are calculated as below.
+{% gist da66ea23605f119f13fc806a4b7ef923 %}
 
 The figure below shows the shortest path and its length from the 11 city dataset input.
 ![TSP_BFS_DFS_result](/assets/images/TSP_BFS_DFS_result.png){:class="img-responsive"}
