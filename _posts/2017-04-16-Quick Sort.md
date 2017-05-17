@@ -34,7 +34,9 @@ Based on the assumption that each element in the input array is distinct, the lo
 
 ![QuickSort](/assets/images/QuickSort_WorstCase.png){:class="img-responsive"}
 
+
 Solving this recurrence equation with recursion Tree:
+
 ![QuickSort](/assets/images/QuickSort_WorstCaseRecursionTree.png){:class="img-responsive"}
 
 
@@ -42,9 +44,11 @@ Solving this recurrence equation with recursion Tree:
 
 ![QuickSort](/assets/images/QuickSort_BestCase.png){:class="img-responsive"}
 
+
 #### Average case
 
 The average case input would be any randomly generated arrays and the pivot is at the random position every step.
+
 
 #### How to avoid the worst case
 
