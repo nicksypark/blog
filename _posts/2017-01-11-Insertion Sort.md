@@ -27,6 +27,9 @@ Three categories to satisfy to prove loop invariants:
 
 ## Insertion sort
 
+![InsertionSort](/assets/images/InsertionSort_1.png){:class="img-responsive"}
+![InsertionSort](/assets/images/InsertionSort_2.png){:class="img-responsive"}
+
 The insertion sort implementation in Lua.
 
 ```lua
@@ -102,6 +105,24 @@ describe('insertionSort', function()
 end)
 
 ```
+
+#### Insertion Sort time analysis
+
+| Best case | Worst case | average case |
+|:--------:|:--------:|:-------:|
+| O(n)  | O(n^2) | O(n^2) |
+
+The best case :
+
+The best case input is an array sorted in increasing order. No elements in the left of a key is smaller if the array is pre-sorted in increasing order; therefore, no elements would be shifted while iterating through the array. In this case, the time complexity would be O(n); thus, the processing time of the best case should grow linearly as n increase.
+
+The worst case :  
+
+The worst case input is an array sorted in decreasing order. A key element is always smaller than the one that is in its left causing the one-position shift of elements for every loop iterating though the array; thus, the time complexity in this case would be O(n^2). The processing time for this case will grow exponentially as the rate of  as n increase.
+
+The average case :
+
+The average case input would be any randomly generated arrays except for the ones that happens to be generated as the pre-sorted array. The performance would be dependent on the degree of how close to the input array being sorted. For instance, the almost sorted input in increasing order would perform as close to the best case. Except for this case, assuming the half of the input array is sorted, the time complexity would be still O(n^2) due to the shift and loop iteration; thus, the processing time for this case will still grow exponentially as the rate of as n increase.
 
 ## Reference
 [^1] https://en.wikipedia.org/wiki/Loop_invariant
