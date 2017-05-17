@@ -44,9 +44,12 @@ T(n) = 2T(n/2) + O(n)
 
 3 methods for solving recurrences (Obtaining O-notation)
 
+
 * Substitution method
 * Recursion-tree method
 * Master method
+
+
 
 - Substitution method (a.k.a making a good guess method)
 
@@ -54,15 +57,20 @@ T(n) = 2T(n/2) + O(n)
 2. Verify if recurrence is satisfied
 3. Solve for constants
 
+
 ![MergeSort](/assets/images/SubstitutionMethod.png){:class="img-responsive"}
 
 Can we have a tighter bound?
+
+
 
 - Recursion-tree method
 
 Models the costs of a recursion execution of an algorithm
 
 ![MergeSort](/assets/images/Recursion_tree.png){:class="img-responsive"}
+
+
 
 - Master method
 

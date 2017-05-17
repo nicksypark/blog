@@ -18,15 +18,35 @@ share: false
 
 #### Quick Sort Example
 
+The following shows how quick sort works
+
+
 ![QuickSort](/assets/images/QuickSortEx1.png){:class="img-responsive"}
 ![QuickSort](/assets/images/QuickSortEx2.png){:class="img-responsive"}
 ![QuickSort](/assets/images/QuickSortEx3.png){:class="img-responsive"}
 ![QuickSort](/assets/images/QuickSortEx4.png){:class="img-responsive"}
 
+
 #### Quick Sort Pseudo code
 
-![QuickSort](/assets/images/QuickSort_Pseudo1.png){:class="img-responsive"}
-![QuickSort](/assets/images/QuickSort_Pseudo2.png){:class="img-responsive"}
+```cpp
+PARTITION(A,p,q)
+  x = A[p] // pivot = 1st element of array
+  i = p
+  for j = p+1 to q
+     if A[j] <= x
+        i = i+1
+        exchange A[i] with A[j]
+  exchange A[p] with A[i]                       
+  return i //return position of pivot element
+
+
+QUICKSORT(A,p,r)
+  if p<r
+     q = PARTITION(A,p,r)
+     QUICKSORT(A,p,q-1)
+     QUICKSORT(A,q+1,r)
+```
 
 #### Recurrence equation for Quick Sort (Worst case)
 
