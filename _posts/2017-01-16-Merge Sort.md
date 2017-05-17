@@ -69,8 +69,11 @@ Models the costs of a recursion execution of an algorithm
 Master method only applies to a particular family of recurrences of the form.
 
 ![MergeSort](/assets/images/MasterMethodForm.png){:class="img-responsive"}
+
+How to solve with master method (pre-defined 3 cases)
 ![MergeSort](/assets/images/MasterMethodCases.png){:class="img-responsive"}
 
+Solve MergeSort using Master method
 ![MergeSort](/assets/images/MergeSort_MasterMethod.png){:class="img-responsive"}
 
 
