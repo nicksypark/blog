@@ -22,6 +22,58 @@ A few examples of the algorithms using Divide-and-conquer approach.
 
 ## Merge sort
 
+Input Array = <5,2,4,7,1,3,2,6>
+![MergeSort](/assets/images/MergeSort.png){:class="img-responsive"}
+
+#### Merge Sort Pseudo code
+
+```cpp
+T(n)           MERGE-SORT A[1 ... n]
+O(1)             If n=1, done                        
+T(n/2)+T(n/2)    recursively sort A[1 ... n/2] and A[n/2+1 ... n]
+O(n)             MERGE the 2 sorted lists
+```
+
+#### Recurrence equation for Merge Sort
+![MergeSort](/assets/images/MergeSort_RecurrenceEqn.png){:class="img-responsive"}
+
+T(n) = 2T(n/2) + O(n)
+
+
+#### How to solve recurrences?
+
+3 methods for solving recurrences (Obtaining O-notation)
+
+* Substitution method
+* Recursion-tree method
+* Master method
+
+- Substitution method (a.k.a making a good guess method)
+
+1. Guess the form of the solutions
+2. Verify if recurrence is satisfied
+3. Solve for constants
+
+![MergeSort](/assets/images/SubstitutionMethod.png){:class="img-responsive"}
+
+Can we have a tighter bound?
+
+- Recursion-tree method
+
+Models the costs of a recursion execution of an algorithm
+
+![MergeSort](/assets/images/Recursion_tree.png){:class="img-responsive"}
+
+- Master method
+
+Master method only applies to a particular family of recurrences of the form.
+
+![MergeSort](/assets/images/MasterMethodForm.png){:class="img-responsive"}
+![MergeSort](/assets/images/MasterMethodCases.png){:class="img-responsive"}
+
+![MergeSort](/assets/images/MergeSort_MasterMethod.png){:class="img-responsive"}
+
+
 The merge sort implementation in Lua.
 
 ```lua
@@ -110,3 +162,11 @@ describe('mergeSort', function()
 end)
 
 ```
+
+#### Merge Sort time analysis
+
+| Best case | Worst case | average case |
+|:--------:|:--------:|:-------:|
+| O(nlgn)  | O(nlgn) | O(nlgn) |
+
+For merge sort, any inputs with the size n regardless of input pre-sorted or not would perform the same asymptotically because this algorithm is based on divide-and-conquer. No matter what inputs are, it will still make the same recursive calls to divide array into two halves and take the linear time to merge the values. The time complexity for all cases would be O(nlgn) for any inputs; thus, the processing time for this case will grow as the rate of as n increase.
