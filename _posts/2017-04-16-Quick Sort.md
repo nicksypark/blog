@@ -20,11 +20,7 @@ share: false
 
 The following shows how quick sort works
 
-
-![QuickSort](/assets/images/QuickSortEx1.png){:class="img-responsive"}
-![QuickSort](/assets/images/QuickSortEx2.png){:class="img-responsive"}
-![QuickSort](/assets/images/QuickSortEx3.png){:class="img-responsive"}
-![QuickSort](/assets/images/QuickSortEx4.png){:class="img-responsive"}
+![QuickSort](/assets/images/QuickSortExample.png){:class="img-responsive"}
 
 
 #### Quick Sort Pseudo code
