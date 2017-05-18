@@ -12,10 +12,10 @@ share: false
 
 Consider all the sorting algorithms below;
 
-Insertion Sort
-Merge Sort
-Quick Sort
-Heap Sort
+* Insertion Sort
+* Merge Sort
+* Quick Sort
+* Heap Sort
 
 They are all based on comparison model.
 Comparison sorts only use comparison to determine relevant order of elements.
