@@ -14,7 +14,10 @@ share: false
 2. Efficient in storage
 3. Another Divide-and-conquer based algorithm
 
-![QuickSort](/assets/images/DivideAndConquerParadigm.png){:class="img-responsive"}
+- Divide: Partition the array into 2 subarrays around a pivot x. ( [...x-1] [x] [...x+1] )
+- Conquer: Sort the 2 subarrays by recursive calls to quicksort.
+- Combine: Trivial (subarrays are already sorted)
+
 
 #### Quick Sort Example
 
@@ -58,6 +61,8 @@ Solving this recurrence equation with recursion Tree:
 
 #### Recurrence equation for Quick Sort (Best case)
 
+The best case is when partition splits array evenly.
+
 ![QuickSort](/assets/images/QuickSort_BestCase.png){:class="img-responsive"}
 
 
@@ -72,11 +77,21 @@ The average case input would be any randomly generated arrays and the pivot is a
 - Fast otherwise
 
 Answer: Partition around a random pivot element.
-Question: Does it always guarantee O(nlgn)? What if the random pivot always happen to be the smallest or biggest?
 
-We want to guarantee to find the median all the time, but it has to run in linear time.
+Question:
+Does it always guarantee O(nlgn)?
+What if the random pivot always happen to be the smallest or biggest?
+
+There is still possibility that randomly picked element is always an extreme.
+
+We can achieve time complexity O(nlgn) even in worst case if we know the median of an unsorted array can be found in linear time.
+
 We can use SELECT algorithm which runs in linear time.
 
 ![QuickSort](/assets/images/SelectAlgorithm1.png){:class="img-responsive"}
 ![QuickSort](/assets/images/SelectAlgorithm2.png){:class="img-responsive"}
 ![QuickSort](/assets/images/SelectPseudoCode.png){:class="img-responsive"}
+
+The recurrence equation becomes
+
+T(n) = T(n/2) + T(n/2) + n = 2T(n/2) + n = O(nlgn)
