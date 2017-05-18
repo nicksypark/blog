@@ -59,7 +59,7 @@ T(n) = 2T(n/2) + O(n)
 
 
 
-- Substitution method (a.k.a making a good guess method)
+#### Substitution method (a.k.a making a good guess method)
 
 1. Guess the form of the solutions
 2. Verify if recurrence is satisfied
@@ -72,7 +72,7 @@ Can we have a tighter bound?
 
 
 
-- Recursion-tree method
+#### Recursion-tree method
 
 Models the costs of a recursion execution of an algorithm
 
@@ -80,7 +80,7 @@ Models the costs of a recursion execution of an algorithm
 
 
 
-- Master method
+#### Master method
 
 Master method only applies to a particular family of recurrences of the form.
 
