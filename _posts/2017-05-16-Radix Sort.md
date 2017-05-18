@@ -30,6 +30,8 @@ The best worst-case running time of all the comparison sorts is O(nlgn).
 
 ![RadixSort](/assets/images/RadixSort.png){:class="img-responsive"}
 
+
+#### Radix Sort Pseudo code
 ```cpp
 RADIX-SORT(A,d)
   for i=1 to d
@@ -47,7 +49,7 @@ The execution of radix sort algorithm sorts repeatedly from least-significant di
 
 ![RadixSort](/assets/images/RadixSortPerformance.png){:class="img-responsive"}
 
-Least significant digit vs Most significant digit
+#### Least significant digit vs Most significant digit
 
 Least significant digit radix sort: logical concatenation of the sorted bins after each pass.
 Most significant digit radix sort: recursive sorting each bin independently after each pass. (e.g., sorting bytes 256 bins after first pass, 65536 bins after second pass, 16777216 (16 million) bins after third pass and so on)
