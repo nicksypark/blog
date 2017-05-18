@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Quick Sort"
-description: "Quick sort"
+description: "The best practical choice based on Divide-and-conquer"
 date: 2017-04-16
 tags: [sorting, algorithm]
 comments: true
