@@ -12,6 +12,10 @@ share: false
 
 If there is a problem that cannot be easily solved as it is, we can break the problem into smaller sub-problems if possible (Divide). Then, we solve these sub-problems recursively (Conquer). The solution to the original problem can be created through combining the solutions to the sub-problems (Combine). It is important that how effectively we break the problem into smaller sub-problems. Divide-and-conquer approach is most likely implemented through recursion.
 
+
+![MergeSort](/assets/images/DesignAlgorithm.png){:class="img-responsive"}
+
+
 A few examples of the algorithms using Divide-and-conquer approach.
 
 * Quick Sort
@@ -23,7 +27,11 @@ A few examples of the algorithms using Divide-and-conquer approach.
 ## Merge sort
 
 Input Array = <5,2,4,7,1,3,2,6>
+
+
 ![MergeSort](/assets/images/MergeSort.png){:class="img-responsive"}
+
+
 
 #### Merge Sort Pseudo code
 

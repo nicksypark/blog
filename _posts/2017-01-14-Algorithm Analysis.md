@@ -50,3 +50,5 @@ We need to measure the rate of growth asymptotically and irrelevantly to the mac
 * Theta notation is tight bounds.
 * Little o-notation
 * Little omega-notation
+
+![AlgorithmAnalysis](/assets/images/AsymptoticNotation.png){:class="img-responsive"}
