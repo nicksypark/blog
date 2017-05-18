@@ -53,3 +53,15 @@ The execution of radix sort algorithm sorts repeatedly from least-significant di
 
 Least significant digit radix sort: logical concatenation of the sorted bins after each pass.
 Most significant digit radix sort: recursive sorting each bin independently after each pass. (e.g., sorting bytes 256 bins after first pass, 65536 bins after second pass, 16777216 (16 million) bins after third pass and so on)
+
+#### Sorting algorithm comparison
+
+| Algorithm | Data Structure | Best case | Average case | Worst case
+|:--------:|:--------:|:-------:|:--------:|:-------:|
+| Insertion sort  | Array | O(n) | O(n^2) | O(n^2) |
+| Quicksort  | Array | O(nlgn) | O(nlgn) | O(n^2) |
+| Mergesort  | Array | O(nlgn) | O(nlgn) | O(nlgn) |
+| Heapsort  | Array | O(nlgn) | O(nlgn) | O(nlgn) |
+| Radixsort  | Array | O(dn) | O(dn) | O(dn) |
+
+![RadixSort](/assets/images/Conclusion.png){:class="img-responsive"}
